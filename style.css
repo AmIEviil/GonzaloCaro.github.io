@@ -1,0 +1,149 @@
+#main-content {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(204, 243, 129);
+    /* background: #000000; */
+    background: linear-gradient(90deg, #000 67%, #ccf381 110%);
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+#home {
+    height: 100vh;
+    scroll-snap-align: start;
+
+    .card_center-container {
+        display: block;
+        border: 2px solid rgb(204, 243, 129);
+        border-radius: 16px;
+        width: 350px;
+        position: absolute;
+        top: 30%;
+        left: 10%;
+    }
+
+    .card_center-container:hover {
+        border: 2px solid rgb(204, 243, 129);
+        box-shadow: 0 0 10px rgb(204, 243, 129);
+        background-color: rgba(203, 243, 129, 0.096);
+    }
+
+    .card_center-content {
+        padding: 0.5em 2em;
+    }
+
+}
+
+#about-me {
+    height: 100vh;
+    scroll-snap-align: start;
+
+    .card_about {
+        display: block;
+        border: 2px solid rgb(204, 243, 129);
+        border-radius: 16px;
+        width: 350px;
+        position: relative;
+        top: 30%;
+        left: 15%;
+    }
+
+    .card_about:hover {
+        border: 2px solid rgb(204, 243, 129);
+        box-shadow: 0 0 10px rgb(204, 243, 129);
+        background-color: rgba(203, 243, 129, 0.096);
+    }
+
+    .card_about-content {
+        padding: 0.5em 2em;
+    }
+
+    .card_about-me {
+        display: block;
+        border: 2px solid rgb(204, 243, 129);
+        border-radius: 16px;
+        width: 350px;
+        position: relative;
+        top: 40%;
+        left: 60%;
+    }
+
+    .card_about-me:hover {
+        border: 2px solid rgb(204, 243, 129);
+        box-shadow: 0 0 10px rgb(204, 243, 129);
+        background-color: rgba(203, 243, 129, 0.096);
+    }
+
+}
+
+#projects {
+    height: 100vh;
+    scroll-snap-align: start;
+
+}
+
+#contact {
+    height: 100vh;
+    scroll-snap-align: start;
+
+}
+
+.nav_bar {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+.nav_bar-title {
+    margin: 2em 2em;
+}
+
+.nav_bar-title:hover {
+    text-shadow: 0 0 10px rgb(204, 243, 129);
+}
+
+.nav_bar-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav_bar-options {
+    margin: 0 1em;
+}
+
+.options-text {
+    text-decoration: none;
+    color: white;
+}
+
+.options-text:hover {
+    text-shadow: 0 0 10px rgb(204, 243, 129);
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgb(203, 243, 129);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #000;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
